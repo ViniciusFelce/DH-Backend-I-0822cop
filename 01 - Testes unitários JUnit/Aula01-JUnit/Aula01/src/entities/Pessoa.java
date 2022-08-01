@@ -56,8 +56,8 @@ public class Pessoa {
     }
 
     public int calcIdade() {
-        int idade = Period.between(this.dataNasc, LocalDate.of(2022, 8, 01)).getYears();
-        return idade;
+        int idadePessoa = Period.between(this.dataNasc, LocalDate.of(2022, 8, 01)).getYears();
+        return idadePessoa;
     }
 
     @Override
