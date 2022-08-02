@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2ebf39b-d5ba-49e4-ac21-b5701c3180e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../01 - Testes unitários JUnit/Aula01-JUnit/Aula01/out/production/Aula01/tests/PessoaTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../01 - Testes unitários JUnit/Aula01-JUnit/Aula01/src/tests/PessoaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../01 - Testes unitários JUnit/Aula01-JUnit/Aula01/src/tests/PessoaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula02.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Aula02/entities/Contratado.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Aula02/entities/Efetivo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Aula02/entities/Funcionario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Aula02/tests/FuncionarioTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Contratado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Efetivo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Funcionario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/FuncionarioTest.java" beforeDir="false" />
+    <list default="true" id="6a200f88-965e-49cb-8db4-62a60a15fe02" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Efetivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Efetivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/FuncionarioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/FuncionarioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +24,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2CnbeX4Jdhw2iBbhbUaNlGHtm3D" />
+  <component name="ProjectId" id="2CnvxZpBOFVva2jcArAfiFUpse7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -49,15 +37,9 @@
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Drive-dnweb-development/DH - CTD 2022/03-Backend-I-010822-Manhã/01 - Testes unitários JUnit"
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="entities" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="FuncionarioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Aula02" />
@@ -83,11 +65,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a2ebf39b-d5ba-49e4-ac21-b5701c3180e3" name="Changes" comment="" />
-      <created>1659441396594</created>
+      <changelist id="6a200f88-965e-49cb-8db4-62a60a15fe02" name="Changes" comment="" />
+      <created>1659451412372</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1659441396594</updated>
+      <updated>1659451412372</updated>
     </task>
     <servers />
   </component>
