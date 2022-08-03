@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6a200f88-965e-49cb-8db4-62a60a15fe02" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Efetivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Efetivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/FuncionarioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/FuncionarioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +35,8 @@
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Drive-dnweb-development/Sisnema/Formação Java Backend/Github/Java Backend/Cap01.1a Nivelamento em lógica"
   }
 }]]></component>
   <component name="RunManager">
