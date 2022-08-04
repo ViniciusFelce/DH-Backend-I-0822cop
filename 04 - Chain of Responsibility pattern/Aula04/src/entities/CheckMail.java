@@ -10,6 +10,7 @@ public class CheckMail {
         Gerenciador tecnica = new GerenciadorTecnica();
         Gerenciador spam = new GerenciadorSpam();
 
+        // Não faça igual ao cara aquele!!! Digite esta parte também.
         inicial.setGerenciadorSeguinte(comercial);
         comercial.setGerenciadorSeguinte(tecnica);
         tecnica.setGerenciadorSeguinte(spam);
