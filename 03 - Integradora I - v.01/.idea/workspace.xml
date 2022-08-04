@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39d2172f-07c9-432f-8191-633fdf05af3b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Versao01.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Versao01/entities/Afiliado.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Versao01/entities/Funcionario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Versao01/entities/Vendedor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Versao01/tests/VendedorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Versao00/src/tests/VendedorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Versao00/src/tests/VendedorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +29,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Drive-dnweb-development/DH - CTD 2022/03-Backend-I-010822-Manhã/03 - Integradora I - v.00"
+    "last_opened_file_path": "D:/Drive-dnweb-development/DH - CTD 2022/03-Backend-I-010822-Manhã/03 - Integradora I - v.01"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

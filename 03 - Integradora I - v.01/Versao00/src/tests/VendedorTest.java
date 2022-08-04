@@ -21,7 +21,7 @@ public class VendedorTest {
         a1 = new Afiliado("Ramon");
         a1.vender(1);
 
-        a2 = new Afiliado("Paulo");
+        a2 = new Afiliado("Paula");
         a2.vender(1);
 
         f1.addAfiliado(a1);
