@@ -22,8 +22,8 @@ public class GradeFilmesProxy implements IGradeDeFilmes {
 
         Filme f = gradeDeFilmes.getFilme(nomeDoFilme);
 
-        System.out.println("País do filme: " + f.getPais());
-        System.out.println("País do solicitante: " + getIpRec().getPais());
+//        System.out.println("País do filme: " + f.getPais());
+//        System.out.println("País do solicitante: " + getIpRec().getPais());
 
         // Só entra no IF se forem diferentes
         if (!(getIpRec().getPais()).equalsIgnoreCase(f.getPais())) {

@@ -1,7 +1,4 @@
-import entities.FilmeNaoHabilitadoException;
-import entities.GradeDeFilmes;
-import entities.GradeFilmesProxy;
-import entities.Ip;
+import entities.*;
 
 public class Programa {
 
@@ -11,7 +8,8 @@ public class Programa {
         proxy.setIpRec(new Ip(49, 210, 150, 6));
 
         try {
-            System.out.println(proxy.getFilme("O nome da rosa").getLink());
+            String url = proxy.getFilme("O nome da rosa").getLink();
+            System.out.println(url);
             System.out.println("Acesso liberado.");
         }
         catch (FilmeNaoHabilitadoException e) {
