@@ -19,7 +19,6 @@ public class Programa {
         System.out.println("MAC3: " + mac3);
         System.out.println("Windows1: " + win1);
         System.out.println("Windows2: " + win2); // Pega da memória
-
     }
 
 }
