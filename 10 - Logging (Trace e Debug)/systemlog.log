@@ -1,0 +1,14 @@
+
+[2022-08-12 10:32:31] [INFO ] [ListaMedia:23] - O comprimento da lista é maior que 5.
+[2022-08-12 10:32:31] [INFO ] [ListaMedia:23] - O comprimento da lista é maior que 5.
+[2022-08-12 10:32:31] [INFO ] [ListaMedia:43] - A média da lista é: 3
+[2022-08-12 10:32:31] [ERROR] [ListaMedia:33] - A lista está vazia!
+
+[2022-08-12 10:37:39] [INFO ] [ListaMedia:23] - O comprimento da lista é maior que 5.
+[2022-08-12 10:37:39] [INFO ] [ListaMedia:26] - O comprimento da lista é maior que 10.
+[2022-08-12 10:37:39] [INFO ] [ListaMedia:43] - A média da lista é: 3
+[2022-08-12 10:37:39] [ERROR] [ListaMedia:33] - A lista está vazia!
+java.lang.Exception
+	at ListaMedia.comparaListas(ListaMedia.java:29)
+	at ListaMedia.<init>(ListaMedia.java:15)
+	at Programa.main(Programa.java:13)
