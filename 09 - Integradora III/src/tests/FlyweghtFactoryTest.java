@@ -19,7 +19,6 @@ public class FlyweghtFactoryTest {
         t1 = FlyweightFactory.criarTriangulo("Vermelho");
         t2 = FlyweightFactory.criarTriangulo("Azul");
         t3 = FlyweightFactory.criarTriangulo("Azul");
-
         q1 = FlyweightFactory.criarQuadrado(2);
         q2 = FlyweightFactory.criarQuadrado(5);
         q3 = FlyweightFactory.criarQuadrado(5);
