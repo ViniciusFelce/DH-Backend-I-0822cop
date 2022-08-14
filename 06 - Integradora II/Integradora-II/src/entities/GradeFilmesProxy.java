@@ -28,7 +28,7 @@ public class GradeFilmesProxy implements IGradeDeFilmes {
         // Só entra no IF se forem diferentes
         if (!(getIpRec().getPais()).equalsIgnoreCase(f.getPais())) {
             throw new FilmeNaoHabilitadoException(nomeDoFilme + " não disponível no(a) "
-            + getIpRec().getPais() + "!");
+            + getIpRec().getPais() + "! :(");
         }
 
         return f;
