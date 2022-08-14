@@ -15,7 +15,7 @@ public class ListaMedia {
         comparaListas(inteiros);
     }
 
-    // Este método é privado por é chamado apenas dentro desta classe
+    // Este método é privado pois é chamado apenas dentro desta classe
     private void comparaListas(List<Integer> inteiros) {
 
         try {
