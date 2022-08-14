@@ -33,7 +33,7 @@ public class VendedorTest {
         e1.vender(6);
 
         e2 = new Estagiario("Mitra");
-        e2.vender(18);
+        e2.vender(16);
     }
 
     @Test
