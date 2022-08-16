@@ -1,10 +1,7 @@
 import entities.Conta;
 import org.apache.log4j.Logger;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class Programa {
 
@@ -12,10 +9,9 @@ public class Programa {
 
     private static final String CREATE_TABLE = "DROP TABLE IF EXISTS conta; CREATE TABLE conta (id INT PRIMARY KEY AUTO_INCREMENT, nome VARCHAR(64), numConta VARCHAR(16), saldoAtual DOUBLE)";
 
-    private static final String INSERT_TABLE = "INSERT INTO conta (id, nome, numConta, saldoAtual) VALUES (?, ?, ?, ?)";
+    private static final String INSERT_TABLE = "INSERT INTO conta (nome, numconta, saldoatual) VALUES (?, ?, ?)"; // 1 2 3
 
     private static final String UPDATE_TABLE = "UPDATE conta SET saldoAtual=? WHERE id=?";
-
 
     public static void main(String[] args) throws SQLException {
 
@@ -28,13 +24,20 @@ public class Programa {
             Statement statement = conexao.createStatement();
             LOGGER.info("Criando a tabela conta no banco de dados.");
             statement.execute(CREATE_TABLE);
+
+            PreparedStatement inserirDados = conexao.prepareStatement(INSERT_TABLE);
+            inserirDados.setString(1, c1.getNome());
+            inserirDados.setString(2, c1.getNumconta());
+            inserirDados.setDouble(3, c1.getSaldo());
+            LOGGER.info("Inserindo o Bill Gates na conta corrente - Banco de Dados.");
+            inserirDados.execute();
         }
         catch (Exception e) {
             LOGGER.error("Erro ao acessao o H2: ", e);
         }
         finally {
             if (conexao == null) {
-                return; // Se entrar neste If não executa a linha 40
+                return; // Se entrar neste If não executa a linha do conexao.close();
             }
             conexao.close();
         }
