@@ -31,6 +31,18 @@ public class Programa {
             inserirDados.setDouble(3, c1.getSaldo());
             LOGGER.info("Inserindo o Bill Gates na conta corrente - Banco de Dados.");
             inserirDados.execute();
+
+            LOGGER.info("Buscar os registros no Banco de Dados.");
+            mostrarDados(conexao);
+
+            // Efetuar o depósito de R$10,00
+
+            // Mostrar o saldo
+
+            // Efetuar o depósito de R$15,00
+
+            // Mostrar o saldo
+
         }
         catch (Exception e) {
             LOGGER.error("Erro ao acessao o H2: ", e);
@@ -48,6 +60,22 @@ public class Programa {
     public static Connection conectarBD() throws Exception {
         Class.forName("org.h2.Driver");
         return DriverManager.getConnection("jdbc:h2:~/aula13", "sa", "");
+    }
+
+    private static void mostrarDados(Connection conexao) throws Exception {
+
+        String sqlSelect = "SELECT * FROM conta";
+        Statement statement = conexao.createStatement();
+        ResultSet rs = statement.executeQuery(sqlSelect);
+        LOGGER.info("Contas salvas no Banco de Dados:");
+
+        while (rs.next()) {
+            System.out.println(
+                    "ID: " + rs.getInt(1) +
+                    "\nNome: " + rs.getString(2) +
+                    "\nNúmero da conta: " + rs.getString(3) +
+                    "\nSaldo em conta: " + rs.getDouble(4));
+        }
     }
 
 }
