@@ -49,7 +49,7 @@ public class Programa {
             logger.info("Mostrar usuários antes da deleção.");
             listarTodos(minhaConexao);
 
-            // Executa a instrução para excluir um registro na tabela
+            // Executa a instrução para excluir um registro na tabela do BD.
             logger.info("Excluíndo o usuário com o id 2");
             statement.execute(sqlDelete);
 
