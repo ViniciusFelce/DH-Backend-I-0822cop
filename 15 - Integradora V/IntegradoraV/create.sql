@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS pacientes (id int auto_increment primary key, nome varchar(64), sobrenome varchar(64), rg varchar(64), datacadastro date, endereco varchar(255));
