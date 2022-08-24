@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/trainers") // Aqui é definida a rota para o navegador
+@RequestMapping("/trainers") // Aqui é definida a rota principal para o navegador
 public class TrainerController {
 
     @Autowired // Injeção de dependência
