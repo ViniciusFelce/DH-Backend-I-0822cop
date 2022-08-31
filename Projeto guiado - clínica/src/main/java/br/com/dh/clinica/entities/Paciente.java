@@ -1,6 +1,9 @@
 package br.com.dh.clinica.entities;
 
-public class Paciente {
+import java.io.Serializable;
+
+public class Paciente implements Serializable {
+    private static final long serialVersionUID = 1L;
 
 
 

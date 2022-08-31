@@ -1,6 +1,9 @@
 package br.com.dh.clinica.entities;
 
-public class Consulta {
+import java.io.Serializable;
+
+public class Consulta implements Serializable {
+    private static final long serialVersionUID = 1L;
 
 
 
