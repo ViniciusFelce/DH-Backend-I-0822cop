@@ -45,4 +45,15 @@ public class DentistaService {
         return new DentistaDto(entidade);
     }
 
+    @Transactional
+    public DentistaDto atualizar(Integer id, DentistaDto dto) {
+        Dentista entidade = repository.getReferenceById(id);
+        entidade.setNome(dto.getNome());
+        entidade.setEmail(dto.getEmail());
+        entidade.setCro(dto.getCro());
+        entidade.setAtendeconvenio(dto.isAtendeconvenio());
+        entidade = repository.save(entidade);
+        return new DentistaDto(entidade);
+    }
+
 }

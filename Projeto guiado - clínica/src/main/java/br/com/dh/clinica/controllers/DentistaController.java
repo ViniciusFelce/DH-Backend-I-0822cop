@@ -38,10 +38,16 @@ public class DentistaController {
 
     @PostMapping
     public ResponseEntity<DentistaDto> inserirDentista(@RequestBody DentistaDto dto) {
-        dto = service.inserir(dto);
+        dto = service.inserir(dto); // O dto que retornou agora tem ID
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
                 .buildAndExpand(dto.getId()).toUri();
         return ResponseEntity.created(uri).body(dto);
+    }
+
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<DentistaDto> atualizarDentista(@PathVariable Integer id,  @RequestBody DentistaDto dto) {
+        dto = service.atualizar(id, dto);
+        return ResponseEntity.ok().body(dto);
     }
 
 }
