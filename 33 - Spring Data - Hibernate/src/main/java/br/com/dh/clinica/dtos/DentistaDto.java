@@ -1,29 +1,35 @@
-package br.com.dh.clinica.entities;
+package br.com.dh.clinica.dtos;
 
-import javax.persistence.*;
+import br.com.dh.clinica.entities.Dentista;
+
 import java.io.Serializable;
 
-@Entity
-public class Dentista implements Serializable {
+public class DentistaDto implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nome;
     private String email;
     private Integer cro;
     private boolean atendeconvenio;
 
-    public Dentista() {
+    public DentistaDto() {
     }
 
-    public Dentista(Integer id, String nome, String email, Integer cro, boolean atendeconvenio) {
+    public DentistaDto(Integer id, String nome, String email, Integer cro, boolean atendeconvenio) {
         this.id = id;
         this.nome = nome;
         this.email = email;
         this.cro = cro;
         this.atendeconvenio = atendeconvenio;
+    }
+
+    public DentistaDto(Dentista dentista) {
+        this.id = dentista.getId();
+        this.nome = dentista.getNome();
+        this.email = dentista.getEmail();
+        this.cro = dentista.getCro();
+        this.atendeconvenio = dentista.isAtendeconvenio();
     }
 
     public Integer getId() {
