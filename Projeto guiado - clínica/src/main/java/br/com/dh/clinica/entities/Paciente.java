@@ -75,4 +75,8 @@ public class Paciente implements Serializable {
     public void setDatacadastro(LocalDate datacadastro) {
         this.datacadastro = datacadastro;
     }
+
+    public Set<Endereco> getEnderecos() {
+        return enderecos;
+    }
 }
