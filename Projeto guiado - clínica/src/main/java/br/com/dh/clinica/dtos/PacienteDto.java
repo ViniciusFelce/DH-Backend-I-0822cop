@@ -1,39 +1,42 @@
-package br.com.dh.clinica.entities;
+package br.com.dh.clinica.dtos;
 
-import javax.persistence.*;
+import br.com.dh.clinica.entities.Endereco;
+import br.com.dh.clinica.entities.Paciente;
+
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
-@Table
-public class Paciente implements Serializable {
+public class PacienteDto implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nome;
     private String email;
     private String cpf;
     private LocalDate datacadastro;
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "paciente_endereco",
-        joinColumns = @JoinColumn(name = "paciente_id"),
-        inverseJoinColumns = @JoinColumn(name = "endereco_id"))
-    private Set<Endereco> enderecos = new HashSet<>();
+    private Set<EnderecoDto> enderecos = new HashSet<>();
 
-    public Paciente() {
+    public PacienteDto() {
     }
 
-    public Paciente(Integer id, String nome, String email, String cpf, LocalDate datacadastro) {
+    public PacienteDto(Integer id, String nome, String email, String cpf, LocalDate datacadastro) {
         this.id = id;
         this.nome = nome;
         this.email = email;
         this.cpf = cpf;
         this.datacadastro = datacadastro;
+    }
+
+    public PacienteDto(Paciente entidade) {
+        id = entidade.getId();
+        nome = entidade.getNome();
+        email = entidade.getEmail();
+        cpf = entidade.getCpf();
+        datacadastro = entidade.getDatacadastro();
+        entidade.getEnderecos().forEach(end -> this.enderecos.add(new EnderecoDto(end)));
     }
 
     public Integer getId() {
@@ -76,7 +79,7 @@ public class Paciente implements Serializable {
         this.datacadastro = datacadastro;
     }
 
-    public Set<Endereco> getEnderecos() {
+    public Set<EnderecoDto> getEnderecos() {
         return enderecos;
     }
 }
