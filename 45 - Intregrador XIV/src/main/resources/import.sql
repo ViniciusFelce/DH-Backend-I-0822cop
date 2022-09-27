@@ -11,8 +11,6 @@ INSERT INTO product (title, description, image, price) VALUES ('Veuve Clicquot',
 INSERT INTO product (title, description, image, price) VALUES ('Aveleda','Loureiro,2016','https://images.vivino.com/thumbs/Tol5zx6ITaavFG07Xo_pog_pb_x960.png',68.99);
 INSERT INTO product (title, description, image, price) VALUES ('The Green Wine Company','verdejo,2014','https://images.vivino.com/thumbs/Z43ErVC1QJm71CPKrcnaiw_pb_x600.png',26.07);
 
-
-
  --the middle table
 INSERT INTO product_category (product_id, category_id) VALUES (1,1)
 INSERT INTO product_category (product_id, category_id) VALUES (2,2)
